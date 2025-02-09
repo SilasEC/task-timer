@@ -1,16 +1,9 @@
 [
     {
-        "name": "homework",
-        "start_time": "2025-02-09T14:41:29.233324",
-        "end_time": "2025-02-09T14:41:34.976446",
-        "time": 5.7431275844573975,
-        "start_second": 1739133689.2333186
-    },
-    {
-        "name": "eat",
-        "start_time": "2025-02-09T14:56:32.374371",
-        "end_time": "Running",
-        "time": 0,
-        "start_second": 1739134592.3743715
+        "name": "killlfe",
+        "start_time": "16:19:01 on Sunday, February 09",
+        "end_time": "16:37:59 on Sunday, February 09",
+        "time": 1137.2401127815247,
+        "start_second": 1739139541.8022366
     }
 ]
