@@ -1,14 +1,47 @@
-Task Timer
-==
+# Task Timer
 
-Description
--
+## Description
+This is a simple Python-based timer that helps users track and manage tasks by recording how long they take to complete. It supports:
+- Starting and stopping tasks
+- Displaying the current running task
+- Summarizing the time spent on tasks
+- Storing task data in a JSON file for persistence
+- Formatting output using the `rich` library
+- Running multiple tasks concurrently
 
-This is a simple timer coded in python that allows the user to stop and start tasks to time how long they took. It also displays what task is currently running. The user can also print a summary of their time sheet. It uses a json file to store data between calls. Formatting and color is done via rich. Multiple tasks can be run at a time.
+## Usage
 
-Usage
--
+The program includes several commands to manage tasks:
 
-There are commands to create new tasks, finish ongoing ones, view a timesheet of tasks with their elapsed times, and clear all tasks. The timesheet shows all tasks by default, but you can optionally choose to just see finished or just see ongoing ones. To make a new task you must input a name for the task, and to finish a task you must specify which one. Clearing has no arguments or options. To see exactly how to use these commands, use --help. 
+- **Create a new task**:  
+  To start tracking a new task, use the command `start <task_name>`.
+- **Finish an ongoing task**:  
+  To stop tracking a task, use `finish-task <task_name>`.
+- **View the timesheet**:  
+  To see a summary of all tasks, use `print-timesheet`. You can filter the output to show only finished tasks or ongoing tasks using options `--finished` or `--current`.
+- **Clear all tasks**:  
+  To remove all tasks from the timesheet, use `clear-tasks`.
 
+### Example Commands:
+- Start a task named "project
+  `new-task project`
+  
+- Finish a task named "Work on Project":  
+  `finish-task project`
+  
+- View a summary of all tasks:  
+  `print-timesheet`
+  
+- View only finished tasks:  
+  `print-timesheet --finished`
+  
+- Clear all tasks:  
+  `clear`
 
+---
+
+## Example of Running the Program
+
+1. **Starting a task**  
+   $ task-timer new-task project
+   Created new task "project" at 23:58:50 on Tuesday, February 18
